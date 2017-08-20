@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--<button onclick="Recorder.default.playAllTracks()">Play All</button>-->
+<button onclick="Recorder.default.playAllTracks()" class="play-all-button">
+    <span>play</span>
+</button>
+<div class="track-list">
+    <div class="track-list--item">
+        <div onclick="Recorder.default.record(event)" class="button-control button-control-rec"><span></span></div>
+        <div onclick="Recorder.default.stop()" class="button-control button-control-stop"><span></span></div>
+    </div>
+</div>
+<button onclick="Recorder.default.addNewTrack()" class="button-control button-control-add">
+    <span>+</span>
+</button>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/*
+    ./.babelrc
+*/
+{
+  "presets":[
+    ["latest", {
+      "es2015": false
+    }]
+  ],
+  "plugins": ["transform-class-properties"]
+
+}

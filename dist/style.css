@@ -1,0 +1,66 @@
+.track-list--item    {
+    display: flex;
+    border-bottom: 1px solid #bbbbbb;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.track-list {
+    border-top: 1px solid #bbbbbb;
+}
+
+.button-control {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    cursor: pointer;
+    background: #e2e2e2;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    transition: background 0.3s ease 0s;
+    outline: none;
+}
+
+.button-control:hover {
+    background: #cbcbcb;
+}
+
+.button-control-rec span{
+    width: 18px;
+    height: 18px;
+    background: tomato;
+    border-radius: 100%;
+}
+
+.button-control-stop span{
+    width: 15px;
+    height: 15px;
+    background: #808080;
+}
+
+.button-control-add {
+    margin-top: 15px;
+    border: none;
+}
+
+.play-all-button {
+    margin-bottom: 15px;
+    width: 80px;
+    height: 30px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: grey;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+
+}
+
+.button-control-add span {
+    font-size: 37px;
+    color: #808080;
+
+}
