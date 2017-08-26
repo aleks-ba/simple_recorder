@@ -1,5 +1,5 @@
 import Recorder from './recorder';
-
+var getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 class MyRecorder {
 
     constructor() {
@@ -14,7 +14,6 @@ class MyRecorder {
 
     record = (event) => {
         this.currentTrackElement = event.target.closest('.track-list--item');
-debugger;
         if (typeof this.baseTrack !== 'undefined') {
             this.baseTrack.pause();
             this.baseTrack.currentTime = 0;
@@ -24,7 +23,7 @@ debugger;
                 this.rec.clear();
             }, false);
         }
-        navigator.getUserMedia({audio: true}, (localMediaStream) => {
+	    getUserMedia.call(navigator,{audio: true}, (localMediaStream) => {
             this.mediaStream = localMediaStream;
 
             // create a stream source to pass to Recorder.js
